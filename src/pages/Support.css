@@ -1,0 +1,296 @@
+.support-hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.support-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.03"><path d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/></g></g></svg>');
+  opacity: 0.4;
+}
+
+.support-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  opacity: 0.9;
+}
+
+.support-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.support-hero p {
+  font-size: 1.25rem;
+  opacity: 0.95;
+}
+
+.support-content {
+  padding: 5rem 0;
+}
+
+.support-section {
+  margin-bottom: 5rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--accent-color);
+  flex-shrink: 0;
+}
+
+.support-section h2 {
+  font-size: 2.25rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin: 0;
+}
+
+.support-section > p {
+  color: var(--text-light);
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.support-section a {
+  color: var(--accent-color);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.support-section a:hover {
+  color: var(--accent-light);
+  text-decoration: underline;
+}
+
+.faq-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: var(--shadow);
+  border-color: var(--accent-color);
+}
+
+.faq-item h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.faq-item h3::before {
+  content: 'Q:';
+  color: var(--accent-color);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.faq-item p {
+  color: var(--text-light);
+  line-height: 1.7;
+  padding-left: 2.25rem;
+}
+
+.guide-list {
+  background: var(--light-bg);
+  padding: 2.5rem;
+  border-radius: 12px;
+  line-height: 2.2;
+  border: 1px solid var(--border-color);
+  counter-reset: guide-counter;
+  list-style: none;
+}
+
+.guide-list li {
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  counter-increment: guide-counter;
+}
+
+.guide-list li::before {
+  content: counter(guide-counter);
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+  font-size: 0.875rem;
+}
+
+.guide-list li:last-child {
+  margin-bottom: 0;
+}
+
+.guide-list strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-item {
+  background: var(--light-bg);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.contact-item:hover {
+  box-shadow: var(--shadow);
+  border-color: var(--accent-color);
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1.5rem;
+  color: var(--accent-color);
+}
+
+.contact-item h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+.contact-note {
+  margin-top: 0.75rem !important;
+  font-size: 0.875rem;
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+.report-list {
+  background: var(--light-bg);
+  padding: 2.5rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  border: 1px solid var(--border-color);
+  list-style: none;
+}
+
+.report-list li {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.report-list li::before {
+  content: '✓';
+  color: var(--accent-color);
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  font-size: 1.25rem;
+}
+
+.report-list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .support-hero {
+    padding: 4rem 0;
+  }
+
+  .hero-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .support-hero h1 {
+    font-size: 2rem;
+  }
+
+  .support-hero p {
+    font-size: 1rem;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .support-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .faq-item {
+    padding: 1.5rem;
+  }
+
+  .faq-item h3 {
+    font-size: 1.125rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .faq-item p {
+    padding-left: 0;
+  }
+
+  .guide-list {
+    padding: 1.5rem;
+  }
+
+  .contact-item {
+    padding: 2rem;
+  }
+}
