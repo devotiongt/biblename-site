@@ -5,11 +5,17 @@
     <title>BibleNames</title>
     <script type="text/javascript">
       // GitHub Pages SPA redirect
-      // Guarda la ruta actual y redirige a index.html
-      sessionStorage.redirect = location.href;
+      // Solo redirige rutas HTML, no archivos estáticos como .txt
+      var path = window.location.pathname;
+
+      // No redirigir si es un archivo con extensión
+      if (!path.match(/\.(txt|xml|json|pdf|jpg|png|gif|svg|ico|css|js)$/i)) {
+        sessionStorage.redirect = location.href;
+        window.location.replace('/');
+      }
     </script>
-    <meta http-equiv="refresh" content="0;URL='/'">
   </head>
   <body>
+    <p>404 - Página no encontrada</p>
   </body>
 </html>
