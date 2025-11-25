@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://biblenames.app/sitemap.xml
+Sitemap: https://biblenames.krakengt.com/sitemap.xml

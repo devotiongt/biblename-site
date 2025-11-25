@@ -5,16 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://biblenames.krakengt.com/" />
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Descubre nombres bíblicos para bebés con BibleNames. Más de 1000 nombres con significados, orígenes y recomendaciones personalizadas por IA. Encuentra el nombre perfecto para tu hijo o hija." />
+    <meta name="description" content="Descubre nombres bíblicos para bebés. Más de 1000 nombres con significados, orígenes y recomendaciones IA. App gratis para iOS." />
     <meta name="keywords" content="nombres bíblicos para bebés, nombres bíblicos niño, nombres bíblicos niña, significado nombres bíblicos, app nombres bebé, nombres cristianos, nombres religiosos bebé" />
     <meta name="author" content="BibleNames" />
     <meta name="language" content="Spanish" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://biblenames.krakengt.com/" />
     <meta property="og:title" content="BibleNames - Nombres Bíblicos para tu Bebé" />
-    <meta property="og:description" content="Encuentra el nombre bíblico perfecto para tu bebé con recomendaciones personalizadas. Más de 1000 nombres con significados y orígenes." />
+    <meta property="og:description" content="Encuentra el nombre bíblico perfecto para tu bebé con recomendaciones personalizadas. Más de 1000 nombres con significados." />
+    <meta property="og:image" content="https://biblenames.krakengt.com/app-screenshot.png" />
     <meta property="og:site_name" content="BibleNames" />
 
     <!-- Twitter -->
@@ -28,7 +33,13 @@
     <title>BibleNames - Nombres Bíblicos para Bebés | Significados y Orígenes</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- SEO Fallback Content -->
+      <noscript>
+        <h1>Nombres Bíblicos para Bebés - Descubre el Nombre Perfecto</h1>
+        <p>Explora más de 1,000 nombres bíblicos con significados y orígenes. Encuentra nombres para niño y niña con recomendaciones personalizadas por IA.</p>
+      </noscript>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
 
     <!-- Schema.org Structured Data -->
