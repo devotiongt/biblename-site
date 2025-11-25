@@ -11,13 +11,12 @@ function Home() {
               <SparklesIcon className="badge-icon" />
               <span>Encuentra el Nombre Perfecto</span>
             </div>
-            <h1>Descubre Nombres Bíblicos para tu Bebé</h1>
+            <h1>Nombres Bíblicos para Bebés - Descubre el Nombre Perfecto</h1>
             <p className="hero-subtitle">
-              Explora nombres bíblicos significativos con recomendaciones personalizadas.
-              Desliza a través de hermosos nombres y encuentra el perfecto para tu pequeño.
+              Explora más de 1,000 nombres bíblicos con significados y orígenes. Encuentra nombres para niño y niña con recomendaciones personalizadas por IA. La mejor app para elegir el nombre de tu bebé.
             </p>
             <div className="hero-buttons">
-              <a href="#" className="btn btn-primary">
+              <a href="https://apps.apple.com/gt/app/biblenames/id6755162975?l=en-GB" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 <CloudDownloadIcon className="btn-icon" />
                 Descargar en App Store
               </a>
@@ -145,7 +144,7 @@ function Home() {
             <CloudDownloadIcon className="cta-icon" />
             <h2>¿Listo para Encontrar el Nombre Perfecto?</h2>
             <p>Únete a miles de padres que descubren nombres bíblicos significativos para sus bebés</p>
-            <a href="#" className="btn btn-primary btn-large">
+            <a href="https://apps.apple.com/gt/app/biblenames/id6755162975?l=en-GB" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">
               <CloudDownloadIcon className="btn-icon" />
               Descargar Ahora
             </a>
