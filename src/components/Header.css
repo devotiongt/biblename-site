@@ -25,6 +25,12 @@
   letter-spacing: -0.02em;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -65,6 +71,10 @@
     padding: 1rem 0;
   }
 
+  .nav-right {
+    gap: 1rem;
+  }
+
   .nav-links {
     gap: 1.5rem;
   }
@@ -79,6 +89,10 @@
 }
 
 @media (max-width: 480px) {
+  .nav-right {
+    gap: 0.75rem;
+  }
+
   .nav-links {
     gap: 1rem;
   }

@@ -1,0 +1,31 @@
+.language-switcher {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.language-switcher:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.language-switcher:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .language-switcher {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
